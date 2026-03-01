@@ -1,3 +1,5 @@
+<!-- TODO: Make a section or video in the future about expressions in Rust.-->
+
 # Notes
 
 ## Types
@@ -27,6 +29,19 @@ Variables type can be explicitly annotated by using the `:` after the variable n
 ```rust
 let x: u32 = 5; // sets variable type to unsigned 32-bit integer
 ```
+
+### Constants
+
+**Constant variables** are used with the `const` keyword, and are similar to regular immutable
+variables in that they are unchangeable. However, constants are ALWAYS unchangeable, and
+using `mut` will result in errors.
+
+- Constants are ALWAYS required to have type annotations on declaration.
+- Constants are ALWAYS required to use UPPER_CASE naming format.
+- Constants can be defined at any scope, since they are often used by many different
+  parts of code.
+- Constants may only be set to a constant expression, not the result of value that could
+  only be computed at runtime.
 
 ## Functions
 
@@ -83,6 +98,11 @@ directly, it will consider the source file itself as a crate. Crates can be of t
 format, and works in Rust this way as well for crate versions.
 
 ## Misc
+
+- **Runtime**: The local environment in which a program runs and executes its work, could also mean the total elapsed
+  time of the programs' execution.
+- **Compile Time**: The period of time when the compiler processes source code into other code that is readily
+  executable (or in a library crate just usable).
 
 The `std` keyword in Rust is short for *Standard Library* and contains things you'll use in every codebase.
 
