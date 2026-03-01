@@ -3,10 +3,23 @@ const _SPEED_OF_LIGHT: u32 = 299792458; // Meters per second
 // let x = 5; `let` cannot be used for global variables
 
 fn main() {
+    // A variable is an identifier that is bound to a certain value. The identifier is a name,
+    // and the value is a piece of data produced by an expression. The association between the
+    // identifier and value is called the "binding".
+
+    // For example, you can bind the identifier (name) `x` to the value `5`. This creates a
+    // variable.
+    let x = 5;
+
+    // You can also declare a variable without binding it to a value. You can do this by
+    // "annotating" the variable, which explicitly states a type to the compiler and to other
+    // programmers. For example, a numeric type (e.g., 32-bit unsigned integer). This variable
+    // will remain uninitialed until bound to a value.
+    let x: u32;
+
     // Variables in Rust are immutable (unchangeable) by default. This means any attempt at
     // reassigning values to them to new values will result in error; even if the new value is
     // the same as the original variable.
-
     let z = 17;
     println!("The value of z is: {z}, and is immutable by default");
     // z = 10; this would result in error.
