@@ -9,6 +9,13 @@ A **type** is the way Rust interprets a value in memory, and determines what ope
 - There are **built-in** types which are part of Rust.
 - There are **user-defined** types which are defined by the programmer.
 
+A **scalar** type in Rust represents a single value. Scalars have four main types: integers, floating-points numbers,
+booleans, and characters.
+
+- **Integers** are numbers without a fractional component. Integers can either be _signed_ (only positive numbers) or
+  _unsigned_ (both positive and negative numbers).
+-
+
 ## Variables
 
 A variable is an identifier that is bound to a certain value. An **identifier** is the name you write in code, such
@@ -57,7 +64,7 @@ let mut x = 5;
 x = "string"    // x cannot be bound to a string
 ```
 
-### Type Inference
+### Type Annotation
 
 The type of the variable is inferred by the compiler based on the expression and context. However, you can still
 explicitly **annotate** a type if necessary using a `:` suffix. For example,

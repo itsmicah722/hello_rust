@@ -1,6 +1,9 @@
+// Prevent compile-time warnings due to unused 02_variables and constants
+#![allow(unused)]
+
 // Constants can be declared globally, and are valid for the entire time the program runs.
-const _SPEED_OF_LIGHT: u32 = 299792458; // Meters per second
-// let x = 5; `let` cannot be used for global variables
+const SPEED_OF_LIGHT: u32 = 299_792_458; // Meters per second
+// let x = 5; `let` cannot be used for global 02_variables
 
 fn main() {
     // A variable is an identifier that is bound to a certain value. The identifier is a name,
@@ -34,8 +37,8 @@ fn main() {
     x = 6;
     println!("The value of x was safely changed to: {x}");
 
-    // Constant variables are used with the `const` keyword, and are similar to regular immutable
-    // variables in that they are unchangeable. However, constants are ALWAYS unchangeable, and
+    // Constant 02_variables are used with the `const` keyword, and are similar to regular immutable
+    // 02_variables in that they are unchangeable. However, constants are ALWAYS unchangeable, and
     // using `mut` will result in errors.
     // - Constants are ALWAYS required to have type annotations on declaration.
     // - Constants are ALWAYS required to use UPPER_CASE naming format.
@@ -43,36 +46,36 @@ fn main() {
     // parts of code.
     // - Constants may only be set to a constant expression, not the result of value that could
     // only be computed at runtime.
-    const _A: u32 = 15;
-    println!("The value of a is: {_A}, and is constant");
+    const A: u32 = 15;
+    println!("The value of a is: {A}, and is constant");
 
-    // _A = 15;         Will result in error from reassigning a const
-    // let mut _A = 15; Will result in error from trying to use mut on a const
+    // A = 15;         Will result in error from reassigning a const
+    // let mut A = 15; Will result in error from trying to use mut on a const
 
-    // Here two variables are being declared with the same name using `let`. This is possible due
+    // Here two 02_variables are being declared with the same name using `let`. This is possible due
     // to the concept of "shadowing" in Rust, which essentially that the newly declared variable
     // will be what the compiler sees when you use the name of the variable.
-    // This is useful so that we don't have to use different names for the same variables, (e.g.,
+    // This is useful so that we don't have to use different names for the same 02_variables, (e.g.,
     // y1, y2, etc.)
     // Shadowing is different from making a variable mutable because attempting to reassign the
     // variable to a new value will result in a compile time error when not using the `let`
-    // keyword. This is because the variables are still immutable by default, shadowing only is
+    // keyword. This is because the 02_variables are still immutable by default, shadowing only is
     // like controlled mutability in a sense.
-    let _y = 5;
-    let _y = 5 * 6 / 2;
-    // _y = 5; will not work since `_y` is still immutable when not using `let` keyword.
+    let y = 5;
+    let y = 5 * 6 / 2;
+    // y = 5; will not work since `y` is still immutable when not using `let` keyword.
 
     {
         // This is a new scope being defined. We declare a variable y which is assigned to the
-        // value of the shadowed `_y` variable. It will be forgotten as soon as the curly
+        // value of the shadowed `y` variable. It will be forgotten as soon as the curly
         // brackets end.
-        let y = _y * 2;
-        println!("The value of _y in the inner scope is {y}");
+        let y = y * 2;
+        println!("The value of y in the inner scope is {y}");
     }
 
     // Since the previous curly brackets have closed, what's inside is "out of scope". This
-    // means, only the shadowed `_y` variable will be used in this scope.
-    println!("The value of y in the outer scope is {_y}");
+    // means, only the shadowed `y` variable will be used in this scope.
+    println!("The value of y in the outer scope is {y}");
 
     // In this case, we have one variable which is textual type, and another of numeric type.
     // Shadowing here allows us to use the same name, instead of different temporary (e.g.,
@@ -82,7 +85,7 @@ fn main() {
     println!("Spaces was shadowed to the number: {spaces}")
 
     // Note trying to use `mut` here will result in a compile-time error.
-    // This is because we're not allowed to mutate a variables type.
+    // This is because we're not allowed to mutate a 02_variables type.
     // let mut spaces = "    ";
     // spaces = spaces.len();
 }
