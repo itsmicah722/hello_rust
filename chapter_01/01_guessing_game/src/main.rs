@@ -1,6 +1,9 @@
+use std::{
+    cmp::Ordering,
+    io,
+};
+
 use rand::Rng;
-use std::cmp::Ordering;
-use std::io;
 
 fn main() {
     println!("Welcome to the Guessing Game!");
@@ -25,12 +28,12 @@ fn main() {
             .read_line(&mut guess)
             .expect("Failed to read line");
 
-        // We "shadow" (reuse) the guess variable name so we don't have to create a new variable with
-        // a different name (e.g., like guess_str).
+        // We "shadow" (reuse) the guess variable name so we don't have to create a new variable
+        // with a different name (e.g., like guess_str).
         // `: u32` annotates the type as an unsigned 32-bit integer.
         // trim() removes any whitespace and/or newlines and carriage returns in the string.
-        // parse() converts string types to another type, in this case it will be of u32 since that's
-        // what we set in the annotation.
+        // parse() converts string types to another type, in this case it will be of u32 since
+        // that's what we set in the annotation.
         let guess: u32 = match guess.trim().parse() {
             // `parse()` returns a Result enum, which will either be Ok or Err.
             Ok(num) => num, // num is a success value which will populate the guess variable.
