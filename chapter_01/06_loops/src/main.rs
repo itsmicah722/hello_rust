@@ -1,7 +1,8 @@
-fn main() {
-    for number in (0..=10).rev() {
-        println!("{number}!");
-    }
+#![allow(unused)]
 
-    println!("LIFTOFF!!!");
+fn main() {
+    {
+        let x = 1;
+        x + 1;
+    }
 }

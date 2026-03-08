@@ -1,9 +1,4 @@
-# Expression Oriented Programming
-
-The Rust language
-uses [expression oriented programming](https://en.wikipedia.org/wiki/Expression-oriented_programming_language).
-
-## Expressions
+# Expressions
 
 An **expression** is a piece of code which results in some value. The value of an expression will also have a type
 which matches the value. In Rust, this will be most of the code written. For example,
