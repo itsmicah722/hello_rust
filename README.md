@@ -15,8 +15,9 @@ on to another chapter of the book.
 
 - [Variables](notes/variables.md)
 - [Data Types](notes/types.md)
-- [Expression Oriented Programming](notes/eop.md)
+- [Expressions and Statements](notes/expressions.md)
 - [Functions](notes/functions.md)
+- [If Expressions](notes/if.md)
 
 ### Other
 

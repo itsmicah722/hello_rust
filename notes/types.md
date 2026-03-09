@@ -1,32 +1,65 @@
+<!-- TODO: Finish this section -->
+
 ## Types
 
-## Unit Types
+## Unit Type
 
-The **unit** type in Rust is written as `()` that has exactly one value, and that one value is also written as `()`.
+The `()` type is called the **unit** type and has exactly one value: `()`. The unit type indicates that there is no meaningful value associated with an expression. This doesn't mean there is *no* value, it does have a value which is represented with unit.
 
-The unit type is typically just referred to as _unit_ or _empty value_, etc. All it means is that there is no meaningful
-value here. Rust is an expression-based-language, so when an expression does not result in any meaningful value, it
-evaluates to `()`; and its type is also `()`. For example,
+Think of an expression like a box which holds paper (a value). If a box doesn't have any paper in it, the box still exists, it's just called an empty box. The rule is there cannot be no box, there must always be a box, even if it's empty. In Rust, an empty box is called "unit" with its own special type: `()` and special value: `()`. For example,
 
 ```rust
-let x = 5;
+let x: () = ();
 ```
 
-Here, we are declaring a _statement_ which binds the value 5 to the variable `x`. Statements in Rust are merely
-instructions, and do **not** result in any value. Therefore, `x`
+Here, `x` is type annotated with unit and bound to the value unit. 
+
+```rust
+fn do_nothing() {}
+```
+
+In Rust, functions that do not specify a return type implicitly expect unit. This is the same as:
+
+```rust
+fn do_nothing() -> () {
+    ()
+}
+```
+
+If a block expression ends in a statement, the result of the block expression is unit. For example,
+
+```rust
+fn main() {
+    let result = {
+        let x = 5;
+        x + 10;
+        // ()   unit is returned here 
+    }
+}
+```
+
+The block expression ends in a statement due to the `;`, which results in unit. The type of result will be `()` and its value is also `()`.
+
+> [!NOTE]
+>
+> The expression `x + 10` is still an `i32`, but because it's made a statement from the `;`, its value is discarded. After the value is discarded, there is no expression left to return from the block, so `()` is the result of that block.
+
+This works the same for `if` expressions. For example,
+
+```rust
+let result = if 5 < 2 {
+    println!("2 is greater than 5");
+    2;
+} else if 5 > 2 {
+    println!("5 is greater than 2");
+    5;
+}
+```
+
+Both branches end with expressions that were made statements with `;`. This means the branch expressions are discarded and `()` is returned. The `if` expression now returns unit, and `result` has the type and value of unit.
+
+## Never Type
 
 ## Scalar Types
 
 ## Compound Types
-
-A **type** is the way Rust interprets a value in memory, and determines what operations can be done on that value.
-
-- There are **built-in** types which are part of Rust.
-- There are **user-defined** types which are defined by the programmer.
-
-A **scalar** type in Rust represents a single value. Scalars have four main types: integers, floating-points numbers,
-booleans, and characters.
-
-- **Integers** are numbers without a fractional component. Integers can either be _signed_ (only positive numbers) or
-  _unsigned_ (both positive and negative numbers).
--

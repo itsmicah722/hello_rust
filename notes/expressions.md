@@ -31,8 +31,8 @@ For example,
 
 ```rust
 {
-let x = 5;
-x + 1
+    let x = 5;
+    x + 1
 }
 ```
 
@@ -43,8 +43,8 @@ value: 6.
 
 ```rust
 {
-let x = 5;
-x + 1;
+    let x = 5;
+    x + 1;
 }
 ```
 
@@ -53,8 +53,8 @@ that `x + 1;` is a statement, and not an expression. This means the returned val
 
 ```rust
 let outer_x = {
-let inner_x = 5;
-inner_x + 1
+    let inner_x = 5;
+    inner_x + 1
 }
 ```
 
@@ -65,8 +65,8 @@ value.
 
 ```rust
 let outer_x = {
-let inner_x = 5;
-inner_x + 1;
+    let inner_x = 5;
+    inner_x + 1;
 }
 ```
 
@@ -160,7 +160,7 @@ expects from functions with no return type specified.
 
 ```rust
 fn return_num() -> i32 {
-    5; // error
+    5; // Error
 }
 ```
 
@@ -170,7 +170,7 @@ the function expects an `i32` typed return value, not a unit.
 ```rust
 fn return_num() -> i32 {
     let mut x = 5;
-    x = 1 // error
+    x = 1 // Error
 }
 ```
 
