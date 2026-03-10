@@ -1,7 +1,6 @@
 # Functions
 
-A **function** in Rust is just a named chunk of code that runs code when called. It can optionally take inputs called
-_parameters_, and it may give you an output called a _return value_. For example,
+A **function** is a named chunk of code that runs code when called. It can optionally take inputs called _parameters_, and it may give you an output called a _return value_. For example,
 
 ```rust
 fn add(a: i32, b: i32) -> i32 {
@@ -54,7 +53,7 @@ fn add(a: i32, b: i32) -> i32
 
 > [!NOTE]
 >
-> In Rust, parameter types are included in the signature. Parameter names don't change the signature.
+> Parameter types are included in the signature. Parameter names don't change the signature.
 
 ## Body
 

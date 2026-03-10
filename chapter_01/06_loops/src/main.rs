@@ -74,7 +74,7 @@ fn main() {
     }
     println!("LIFTOFF!!!");
 
-    // This is essentially the same as writing an if expression which checks the value of number
+    // This is essentially the same as writing an if expression which checks the value of count_down
     // and using `break` to stop the loop when one of the branch conditions is true. A `while`
     // loop is just a cleaner and less redundant method to the same result.
 
@@ -84,4 +84,13 @@ fn main() {
     for element in array {
         println!("The value is: {element}")
     }
+
+    // Creates a half-open range that includes both the upper and lower bounds. In the `for` loop,
+    // `rev()` is used to reverse the values in the range. Each value is printed to the screen,
+    // effectively counting down from 10 to 0 and then lift off!
+    let range = 0..=10;
+    for count_down in range.rev() {
+        println!("{count_down}!");
+    }
+    println!("LIFTOFF!!");
 }

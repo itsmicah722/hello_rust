@@ -16,7 +16,7 @@ This loop will continue printing `again` to the screen forever.
 
 ### Never Type
 
-Control flow never reaches the end of an infinite loop, so the expression never produces a value. The [!](types.md#never-type) (*Never Type*) is a real type in Rust that has no possible values at all. For example,
+Control flow never reaches the end of an infinite loop, so the expression never produces a value. The [!](types.md#never-type) (*Never Type*) is a real type that has no possible values at all. For example,
 
 ```rust
 let result = loop {
@@ -123,3 +123,19 @@ for element in a {
 ```
 
 A `for` loop increased the safety of the code and eliminated the chance of index out of bounds errors at runtime. This is because a condition doesn't need to be manually specified for when to end the loop.
+
+### Range Expressions
+
+`for` loops can utilize [range expressions](ranges.md) which create a span of values between two bounds. For example,
+
+```rust
+let range = 0..=10;
+
+for count_down in range.rev() {
+    println!("{count_down}!");
+}
+
+println!("LIFTOFF!!");
+```
+
+This declares a [inclusive range](ranges.md#inclusive-range) expression which includes both the lower bound `0` and the upper bound `10`. We iterate through the range and use the `rev()` function to reverse the values inside the range. This effectively prints a countdown message from `10` to `0` and then lift off!

@@ -24,7 +24,7 @@ These "operators" are syntactic sugar for their underlying **overloading methods
 
 #### Comparison Operators
 
-In Rust, **comparison operators** are operators that compare two values and produce a `bool` result; either `true` or `false`. They are most commonly used inside conditional expressions.
+**Comparison operators** are operators that compare two values and produce a `bool` result; either `true` or `false`. They are most commonly used inside conditional expressions.
 
 | Operator | Meaning                    | Overloading Method             |
 |----------|----------------------------|--------------------------------|
@@ -103,7 +103,7 @@ The `>=` operator returns `true` if the left operand is greater than or equal to
 
 #### Logical Operators
 
-In Rust, **logical operators** operate on `bool` values and produce a `bool` result. They are used to combine multiple conditions into a single conditional expression.
+**Logical operators** operate on `bool` values and produce a `bool` result. They are used to combine multiple conditions into a single conditional expression.
 
 | Operator | Meaning                    | Overloading Method             |
 |----------|----------------------------|--------------------------------|
@@ -138,7 +138,7 @@ The `!` operator inverts a boolean value. In the example, the comparison is fals
 
 ### Branches
 
-In Rust, `if` expressions can have multiple branches that each check for a certain condition. Branches follow a format,
+`if` expressions can have multiple branches that each check for a certain condition. Branches follow a format,
 
 ```rust
 if <condition> {

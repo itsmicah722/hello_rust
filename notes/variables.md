@@ -19,7 +19,7 @@ describe it; for the most part, they mean essentially the same thing. `x` is bot
 Mutability is a property of the binding that controls whether you can assign (bind) a new value to the identifier, and
 whether you get mutable access to the value via that identifier.
 
-By default, all bindings in Rust are **immutable** (meaning unchangeable). Unchangeable in this context means the value
+By default, all bindings are **immutable** (meaning unchangeable). Unchangeable in this context means the value
 of the variable cannot be changed. Attempting to change the value of a binding will result in a compile-time error.
 For example,
 

@@ -18,6 +18,8 @@ on to another chapter of the book.
 - [Expressions and Statements](notes/expressions.md)
 - [Functions](notes/functions.md)
 - [If Expressions](notes/if.md)
+- [Loops](notes/loops.md)
+- [Ranges](notes/ranges.md)
 
 ### Other
 

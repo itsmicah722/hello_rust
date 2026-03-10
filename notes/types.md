@@ -6,7 +6,7 @@
 
 The `()` type is called the **unit** type and has exactly one value: `()`. The unit type indicates that there is no meaningful value associated with an expression. This doesn't mean there is *no* value, it does have a value which is represented with unit.
 
-Think of an expression like a box which holds paper (a value). If a box doesn't have any paper in it, the box still exists, it's just called an empty box. The rule is there cannot be no box, there must always be a box, even if it's empty. In Rust, an empty box is called "unit" with its own special type: `()` and special value: `()`. For example,
+Think of an expression like a box which holds paper (a value). If a box doesn't have any paper in it, the box still exists, it's just called an empty box. The rule is there cannot be no box, there must always be a box, even if it's empty. An empty box is called "unit" with its own special type: `()` and special value: `()`. For example,
 
 ```rust
 let x: () = ();
@@ -18,7 +18,7 @@ Here, `x` is type annotated with unit and bound to the value unit.
 fn do_nothing() {}
 ```
 
-In Rust, functions that do not specify a return type implicitly expect unit. This is the same as:
+Functions that do not specify a return type implicitly expect unit. This is the same as:
 
 ```rust
 fn do_nothing() -> () {

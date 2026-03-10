@@ -1,7 +1,7 @@
 # Expressions
 
 An **expression** is a piece of code which results in some value. The value of an expression will also have a type
-which matches the value. In Rust, this will be most of the code written. For example,
+which matches the value. this will be most of the code written. For example,
 
 ```rust
 5
@@ -80,7 +80,7 @@ unit.
 > type annotated as an `char`, but the block expression returns a numeric typed value like `6`, there will be
 > compile-time errors due to mismatched types.
 
-In Rust, [function bodies](functions.md#function-bodies) are also considered block expressions, and the same
+[Function bodies](functions.md#function-bodies) are also considered block expressions, and the same
 principles apply. For example,
 
 ```rust
