@@ -11,15 +11,22 @@ I'm going out of my way to articulate everything I learn into my own words and r
 extremely time-consuming, but I'm learning a lot better. I find that it forces me to understand concepts before I rush
 on to another chapter of the book.
 
-### Completed Chapters
+### Chapter 1: Basics
 
-- [Variables](notes/variables.md)
-- [Data Types](notes/types.md)
-- [Expressions and Statements](notes/expressions.md)
-- [Functions](notes/functions.md)
-- [If Expressions](notes/if.md)
-- [Loops](notes/loops.md)
-- [Ranges](notes/ranges.md)
+- [Variables](notes/basics/variables.md)
+- [Data Types](notes/basics/types.md)
+- [Expressions and Statements](notes/basics/expressions.md)
+- [Functions](notes/basics/functions.md)
+- [If Expressions](notes/basics/if.md)
+- [Loops](notes/basics/loops.md)
+- [Ranges](notes/basics/ranges.md)
+
+### Chapter 2: Ownership
+
+- [Scopes](notes/ownership/scope.md)
+- [Stack](notes/ownership/stack.md)
+- [Heap](notes/ownership/heap.md)
+- [Move Semantics](notes/ownership/move_semantics.md)
 
 ### Other
 
