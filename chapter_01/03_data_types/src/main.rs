@@ -22,7 +22,7 @@ fn main() {
     let float_32: f32 = 4.0; // 32-bit
 
     // Boolean types can have one of two values, either true or false. Also, booleans can be type
-    // annotated with `bool` in the declaration. For example,
+    // annotated with `bool` in the declaration. For example:
     let boolean = true;
     let boolean: bool = false;
 
@@ -39,7 +39,7 @@ fn main() {
     // Tuples are a compound type which can hold a number of types that can be different. They
     // are assigned to values which correspond to the types annotated in the declaration.
     // The type annotation for the tuple is enclosed in parentheses, and so are the values bound
-    // to that tuple. For example,
+    // to that tuple. For example:
     let tuple: (i32, u64, f32) = (10, 690_000, 67.69);
 
     // The "destructuring" pattern can be used to separate a tuple into multiple bindings. Each
@@ -62,15 +62,15 @@ fn main() {
     // change. Every element in the array will have the same type. Attempting to bind values with
     // different types to the array will result in compile-time errors. Arrays can be declared using
     // square brackets which contains a type and a size, separated by a semicolon:
-    // [type;size] = [element, element, ...] . For example,
+    // [type;size] = [element, element, ...] . For example:
     let array = [1, 2, 3, 4, 5];
 
     // You can also declare an array by binding a set value and size: [value;size] . The size you
-    // set will initialize all elements in the array with that value. For example,
+    // set will initialize all elements in the array with that value. For example:
     let a = [10; 2]; // equivalent to: [10, 10]
 
     // You can access the elements in the array using "indexing". An index is a number which
-    // corresponds to an element in an array. Indexing in Rust starts from zero. For example,
+    // corresponds to an element in an array. Indexing in Rust starts from zero. For example:
     let first = a[0]; // Bind the value (10) of the second element in array 
     let second = a[1]; // Bind the value (10) of the second element in array
 

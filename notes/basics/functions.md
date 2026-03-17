@@ -1,6 +1,7 @@
 # Functions
 
-A **function** is a named chunk of code that runs code when called. It can optionally take inputs called _parameters_, and it may give you an output called a _return value_. For example,
+A **function** is a named chunk of code that runs code when called. It can optionally take inputs
+called _parameters_, and it may give you an output called a _return value_. For example:
 
 ```rust
 fn add(a: i32, b: i32) -> i32 {
@@ -15,37 +16,40 @@ fn main() {
 
 ### Function Call
 
-To **call** a function means to run a function at that line. In `main`, the code `add(2, 3)` is a function call.
+To **call** a function means to run a function at that line. In `main`, the code `add(2, 3)` is a
+function call.
 
 ### Caller
 
-The **caller** is the code (or function) that makes the function call. Here, `main` is the caller of `add`, because the
-main function contains the function call.
+The **caller** is the code (or function) that makes the function call. Here, `main` is the caller of
+`add`, because the main function contains the function call.
 
 ### Pass
 
-To **pass** a value means to send or give this value to the function call so the function can use it. Here, we _pass_
-`2` and `3` to add.
+To **pass** a value means to send or give this value to the function call so the function can use
+it. Here, we _pass_ `2` and `3` to add.
 
 ### Argument
 
-An **argument** is the value itself that you pass in a function call if there are function inputs. In `add(2, 3)`, the
-arguments are `2` and `3`. These values will be used in the function's execution when it runs.
+An **argument** is the value itself that you pass in a function call if there are function inputs.
+In `add(2, 3)`, the arguments are `2` and `3`. These values will be used in the function's execution
+when it runs.
 
 ### Parameter
 
-A **parameter** is the named placeholder variable in a function that receives an argument. Parameters are
-effectively inputs of the function, and are optional. In `fn add(a: i32, b: i32) -> i32`, the parameters are `a` and
-`b`.
+A **parameter** is the named placeholder variable in a function that receives an argument.
+Parameters are effectively inputs of the function, and are optional. In
+`fn add(a: i32, b: i32) -> i32`, the parameters are `a` and `b`.
 
 > [!WARNING]
 >
-> The terms _argument_ and _parameter_ may be thrown around interchangeably, but do **NOT** mean the same thing.
+> The terms _argument_ and _parameter_ may be thrown around interchangeably, but do **NOT** mean the
+> same thing.
 
 ## Signature
 
-A function's **signature** describes its shape, including the name, parameters, and return type. However, the
-function signature does not include the body. For example,
+A function's **signature** describes its shape, including the name, parameters, and return type.
+However, the function signature does not include the body. For example:
 
 ```rust
 fn add(a: i32, b: i32) -> i32
@@ -57,8 +61,8 @@ fn add(a: i32, b: i32) -> i32
 
 ## Body
 
-The function **body** includes the `{ ... }` block, and is the code which is executed when the function is called.
-For example,
+The function **body** includes the `{ ... }` block, and is the code which is executed when the
+function is called. For example:
 
 ```rust
 fn add(a: i32, b: i32) -> i32 {
@@ -69,7 +73,8 @@ fn add(a: i32, b: i32) -> i32 {
 }
 ```
 
-A function body is a [block expression](eop.md#block-expressions), so it can produce a value.
+A function body is a [block expression](expressions.md#block-expressions), so it can produce a
+value.
 
 ## Return Type
 
@@ -80,7 +85,8 @@ fn add(a: i32, b: i32) -> i32 { ... }
 //                        ^^^ return type
 ```
 
-If the return type is omitted, Rust implicitly treats the return type as `()` [unit](types.md#unit-types). For example,
+If the return type is omitted, Rust implicitly treats the return type as
+`()` [unit](types.md#unit-type). For example:
 
 ```rust
 fn do_something() {
@@ -94,8 +100,9 @@ fn do_something_explicit_unit() -> () {
 }
 ```
 
-Return types must always match the value a function returns. Because blocks are expressions, Rust returns the value of
-the **final** expression in a body (the one without a `; `) _as long as it matches the return type._ For example,
+Return types must always match the value a function returns. Because blocks are expressions, Rust
+returns the value of the **final** expression in a body (the one without a `; `) _as long as it
+matches the return type._ For example:
 
 ```rust
 fn double(x: i32) -> i32 {
@@ -103,8 +110,9 @@ fn double(x: i32) -> i32 {
 }
 ```
 
-Adding a semicolon turns an expression into an _expression-statement_, which will result in `()`. This cause
-compilation errors if a function expects a certain return type, and the returned value is unit. For example,
+Adding a semicolon turns an expression into an _expression-statement_, which will result in `()`.
+This cause compilation errors if a function expects a certain return type, and the returned value is
+unit. For example:
 
 ```rust
 fn double(x: i32) -> i32 {

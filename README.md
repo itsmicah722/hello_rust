@@ -1,14 +1,15 @@
 # Hello Rust
 
-<!-- TODO: Once the playlist is complete, post a link to the YouTube playlist. -->
-
-This is a repository keeping track of my progress learning the Rust programming language from scratch. Every line of
+This is a repository keeping track of my progress learning the Rust programming language from
+scratch. Every line of
 code written here is my first in Rust.
 
 ## Notes
 
-I'm going out of my way to articulate everything I learn into my own words and really understand the material. It's
-extremely time-consuming, but I'm learning a lot better. I find that it forces me to understand concepts before I rush
+I'm going out of my way to articulate everything I learn into my own words and really understand the
+material. It's
+extremely time-consuming, but I'm learning a lot better. I find that it forces me to understand
+concepts before I rush
 on to another chapter of the book.
 
 ### Chapter 1: Basics
@@ -23,14 +24,13 @@ on to another chapter of the book.
 
 ### Chapter 2: Ownership
 
-- [Scopes](notes/ownership/scope.md)
-- [Stack](notes/ownership/stack.md)
-- [Heap](notes/ownership/heap.md)
-- [Move Semantics](notes/ownership/move_semantics.md)
+- [References](notes/ownership/references.md)
+- [Slices](notes/ownership/slices.md)
 
 ### Other
 
-This is stuff that I wrote which wasn't in the order that I read it from the Rust book. Just other important
+This is stuff that I wrote which wasn't in the order that I read it from the Rust book. Just other
+important
 concepts I wanted to go over.
 
 - [Semantic Versioning](notes/cargo/versioning.md)

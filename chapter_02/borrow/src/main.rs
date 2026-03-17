@@ -80,7 +80,7 @@ fn main() {
 
     // The term "dangling" means something points to memory that is not valid. This term can
     // apply to both pointers and references, however references are typically used more in Rust
-    // due to safety. References must ALWAYS point to valid memory. For example,
+    // due to safety. References must ALWAYS point to valid memory. For example:
     let r: String;
 
     {
