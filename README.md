@@ -27,11 +27,6 @@ on to another chapter of the book.
 - [References](notes/ownership/references.md)
 - [Slices](notes/ownership/slices.md)
 
-### Other
+### Chapter 3: Structs
 
-This is stuff that I wrote which wasn't in the order that I read it from the Rust book. Just other
-important
-concepts I wanted to go over.
-
-- [Semantic Versioning](notes/cargo/versioning.md)
-- [Crates](notes/cargo/crates.md)
+- [Structs](notes/structs/structs.md)

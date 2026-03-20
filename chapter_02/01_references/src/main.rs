@@ -14,8 +14,8 @@ fn main() {
 
     // NOTE: The act of creating references is known as "borrowing" in Rust. In this case, `&x` is
     // 'borrowing' `x`, and `&s` is 'borrowing' s. References must follow strict rules of ownership
-    // and mutability, enforced by the "borrow checker". The term "borrow" and "reference" are
-    // interchangeable.
+    // and mutability, enforced by the "references checker". The term "references" and "reference"
+    // are interchangeable.
 
     // A reference's scope is known as its "lifetime", and is not identical to the lexical (block
     // based) scope of the binding that it points to. Rust references follow "Non-Lexical
@@ -62,7 +62,7 @@ fn main() {
 
     // This compiles since `r1` and `r2` are both immutable, and the rule states that any number
     // of immutable references can exist in the same lifetime. Additionally, `r3` is mutable, but
-    // since the previous immutable reference's lifetime had already ended, the borrow checker
+    // since the previous immutable reference's lifetime had already ended, the references checker
     // allows it.
 
     let mut s = String::from("Hello");
