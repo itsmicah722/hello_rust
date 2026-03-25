@@ -13,6 +13,10 @@ name = "data_types"
 version = "0.1.0"
 
 [[package]]
+name = "enums"
+version = "0.1.0"
+
+[[package]]
 name = "functions"
 version = "0.1.0"
 
@@ -46,10 +50,6 @@ checksum = "6800badb6cb2082ffd7b6a67e6125bb39f18782f793520caee8cb8846be06112"
 
 [[package]]
 name = "loops"
-version = "0.1.0"
-
-[[package]]
-name = "methods"
 version = "0.1.0"
 
 [[package]]
@@ -119,10 +119,6 @@ version = "0.1.0"
 
 [[package]]
 name = "slices"
-version = "0.1.0"
-
-[[package]]
-name = "structure"
 version = "0.1.0"
 
 [[package]]

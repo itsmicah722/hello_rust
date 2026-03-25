@@ -29,4 +29,4 @@ on to another chapter of the book.
 
 ### Chapter 3: Structs
 
-- [Structs](notes/structs/structs.md)
+- [Structs](notes/basics/structs.md)
